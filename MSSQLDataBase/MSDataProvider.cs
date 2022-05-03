@@ -154,5 +154,26 @@ namespace MSSQLDataBase
                     });
             }
         }
+        
+        void IDataProvider.UpdateCategory(Category category)
+        {
+            using (SqlConnection conn = new SqlConnection(SqlConnectionString))
+            {
+                conn.Open();
+
+                conn.Execute(
+                    "UPDATE Categories " +
+                    "SET " +
+                        "Name = @Name, " +
+                        "Description = @Description " +
+                        "WHERE Id = @Id",
+                    new Category
+                    {
+                        Id = category.Id,
+                        Name = category.Name,
+                        Description = category.Description
+                    });
+            }
+        }
     }
 }

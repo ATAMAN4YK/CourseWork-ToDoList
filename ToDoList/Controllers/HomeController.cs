@@ -3,6 +3,7 @@ using Microsoft.AspNetCore.Mvc;
 using MSSQLDataBase;
 using ToDoList.ViewModels;
 using ToDoListData.Models;
+using Models = ToDoListData.Models;
 using ToDoListData.Providers;
 
 namespace ToDoList.Controllers
@@ -79,6 +80,34 @@ namespace ToDoList.Controllers
         {
             DataBase.DeleteCategory(DataBase.GetCategoryById(id));
             return RedirectToAction("CategoriesList");
+        }
+        public IActionResult EditTask(int TaskId)
+        {
+            var viewModel = new EditTaskViewModel
+            {
+                Task = DataBase.GetTaskById(TaskId),
+                Categories = DataBase.GetCategoryList()
+            };
+            return View("EditTask", viewModel);
+        }
+
+        [HttpPost]
+        public IActionResult UpdateEditedTask(Models.Task editedTask)
+        {
+            DataBase.UpdateTask(editedTask);
+            return View("SuccessfulCreate");
+        }
+
+        public IActionResult EditCategory(int CategoryId)
+        {
+            return View("EditCategory", DataBase.GetCategoryById(CategoryId));
+        }
+
+        [HttpPost]
+        public IActionResult UpdateEditedCategory(Category editedCategory)
+        {
+            DataBase.UpdateCategory(editedCategory);
+            return View("SuccessfulCreate");
         }
     }
 }

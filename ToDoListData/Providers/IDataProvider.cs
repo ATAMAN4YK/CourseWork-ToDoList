@@ -13,6 +13,7 @@ namespace ToDoListData.Providers
         List<Category> GetCategoryList();
         void AddCategory(NewCategory category);
         void DeleteCategory(Category category);
+        void UpdateCategory(Category category);
         Category GetCategoryById(int id);
 
     }

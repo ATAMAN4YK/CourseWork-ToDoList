@@ -1,0 +1,53 @@
+﻿@model EditTaskViewModel
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <title>EDIT TASK</title>
+        <link rel="stylesheet" href="~/css/CreateTask.css"/>
+    </head>
+    <body>
+        <div class="header">
+            <span class="site-name">TO DO LIST</span>
+            <nav>
+                <span class="nav-item"><a asp-controller="Home" asp-action="TasksList">Task List</a></span>
+                <span class="nav-item"><a asp-controller="Home" asp-action="CategoriesList">Categories</a></span>
+            </nav>
+        </div>
+        <div class="main">
+            <form class="add-new-task-box" asp-controller="Home" asp-action="UpdateEditedTask" method="post">
+                <div class="item">
+                    <input type="hidden" name="Id" value=@Model.Task.Id />
+                    <label for="TaskName">Task Name</label>
+                    <input name="TaskName" type="text" value="@Model.Task.TaskName" required>
+                </div>
+                <div class="item">
+                    <label for="TaskText">Task Text</label>
+                    <input name="TaskText" type="text" value="@Model.Task.TaskText" />
+                </div>
+                <div class="item">
+                    <label for="DeadLine">DeadLine</label>
+                    <input name="DeadLine" type="datetime-local" value=@Model.Task.DeadLine.Value.ToString("yyyy-MM-ddTHH:MM") />
+                <div class="item">
+                    <label for="categories">Category</label>
+                    <select name="Category">
+                        @foreach(var category in Model.Categories) {
+                            if(@Model.Task.Category == category.Id)
+                            {
+                                <option value=@category.Id selected>@category.Name</option>
+                            }
+                            else
+                            {
+                                <option value=@category.Id>@category.Name</option>
+                            }
+                        }
+                    </select>
+                </div>
+                <div class="buttons">
+                    <button type="submit">OK</button>
+                </div>
+            </form>
+        </div>
+    </body>
+</html>
