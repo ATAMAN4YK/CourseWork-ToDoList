@@ -1,0 +1,170 @@
+﻿body {
+    margin: 0px;
+
+}
+
+/* Header */
+
+.header {
+    position: relative;
+    height: 70px;
+    background-color: black;
+    color: white;
+    box-shadow: black 0px 0px 5px;
+}
+
+nav {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 50px;
+    width: 500px;
+    text-align: center;
+}
+
+.nav-item {
+    position: relative;
+    top: 20%;
+    margin: 10px;
+    font-size: 25px;
+    font-weight: lighter;
+    font-family: sans-serif;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+.site-name {
+    position: absolute;
+    top: 50%;
+    left: 1%;
+    transform: translateY(-50%);
+    font-size: 30px;
+    font-weight: bold;
+    font-family: sans-serif;
+}
+
+/* Main */
+.main {
+    position: relative;
+}
+
+.tasks {
+    position: relative;
+    left: 50%;
+    top: 10px;
+    width: 1300px;
+    color: black;
+    transform: translateX(-50%);
+    margin-bottom: 50px;
+}
+
+.task {
+    margin-bottom: 15px;
+    font-family: sans-serif;
+    padding: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    position: relative;
+    font-size: 20px;
+    width: 1000px;
+    box-shadow: #b6b6b6 0px 0px 15px;
+}
+
+.task-head {
+    position: relative;
+}
+
+.task-name {
+    display: inline-block;
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.task-deadline {
+    display: inline-block;
+    font-size: 18px;
+}
+
+.task-category {
+    display: inline-block;
+    margin-bottom: 5px;
+    font-size: 18px;
+}
+
+.task-text {
+    display: block;
+    margin-bottom: 5px;
+    font-size: 15px;
+}
+
+.is-completed-done {
+    position: absolute;
+    display: inline;
+    right: 0px;
+    font-weight: bold;
+    color: forestgreen;
+    font-size: 18px;
+}
+
+.is-completed-not-done {
+    position: absolute;
+    display: inline;
+    right: 0px;
+    font-weight: bold;
+    color: orangered;
+    font-size: 18px;
+}
+
+.delete-button,
+.done-button {
+    font-size: 13px;
+    border: 0;
+    height: 35px;
+    width: 100px;
+}
+
+.delete-button:hover,
+.done-button:hover {
+    box-shadow: white 0px 0px 5px;
+}
+
+.delete-button:active,
+.done-button:active {
+    box-shadow: gray 0px 0px 5px;
+}
+
+.add-button a {
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+    width: 65px;
+    height: 65px;
+    background: url("../img/add-button.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    transition: 500ms;
+}
+
+.add-button a:hover {
+    transform: rotate(180deg);
+}
+
+.buttons form {
+    display: inline;
+}
+
+.completed-tasks,
+.not-completed-tasks {
+    font-family: sans-serif;
+    font-size: 20px;
+    position: relative;
+    margin: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: inline-block;
+}

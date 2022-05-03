@@ -1,0 +1,47 @@
+﻿@model List<ToDoListData.Models.Category>
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <title>CREATE TASK</title>
+        <link rel="stylesheet" href="~/css/CreateTask.css"/>
+    </head>
+    <body>
+        <div class="header">
+            <span class="site-name">TO DO LIST</span>
+            <nav>
+                <span class="nav-item"><a asp-controller="Home" asp-action="TasksList">Task List</a></span>
+                <span class="nav-item"><a asp-controller="Home" asp-action="CategoriesList">Categories</a></span>
+            </nav>
+        </div>
+        <div class="main">
+            <form class="add-new-task-box" asp-controller="Home" asp-action="CreateTask" method="post">
+                <div class="item">
+                    <label for="TaskName">Task Name</label>
+                    <input name="TaskName" type="text" required/>
+                </div>
+                <div class="item">
+                    <label for="TaskText">Task Text</label>
+                    <input name="TaskText" type="text"/>
+                </div>
+                <div class="item">
+                    <label for="DeadLine">DeadLine</label>
+                    <input name="DeadLine" type="datetime-local"/>
+                </div>
+                <div class="item">
+                    <label for="categories">Category</label>
+                    <select name="Category">
+                        @foreach(var category in Model) {
+                            <option value=@category.Id >@category.Name</option>
+                        }
+                    </select>
+                </div>
+                <div class="buttons">
+                    <button type="reset">Clear</button>
+                    <button type="submit">Create</button>
+                </div>
+            </form>
+        </div>
+    </body>
+</html>

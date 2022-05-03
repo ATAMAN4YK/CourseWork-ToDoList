@@ -1,0 +1,64 @@
+﻿body {
+    margin: 0px;
+}
+
+/* Header */
+
+.header {
+    position: relative;
+    height: 70px;
+    background-color: black;
+    color: white;
+    box-shadow: black 0px 0px 5px;
+}
+
+nav {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 50px;
+    width: 500px;
+    text-align: center;
+}
+
+.nav-item {
+    position: relative;
+    top: 20%;
+    margin: 10px;
+    font-size: 25px;
+    font-weight: lighter;
+    font-family: sans-serif;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+.site-name {
+    position: absolute;
+    top: 50%;
+    left: 1%;
+    transform: translateY(-50%);
+    font-size: 30px;
+    font-weight: bold;
+    font-family: sans-serif;
+}
+
+/* Main */
+
+.main {
+    position: relative;
+}
+
+.successful-text {
+    position: absolute;
+    top: 50px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 25px;
+    font-weight: bold;
+    font-family: sans-serif;
+    color: forestgreen;
+}

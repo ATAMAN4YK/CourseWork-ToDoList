@@ -1,0 +1,130 @@
+﻿body {
+    margin: 0px;
+}
+
+/* Header */
+
+.header {
+    position: relative;
+    height: 70px;
+    background-color: black;
+    color: white;
+    box-shadow: black 0px 0px 5px;
+}
+
+nav {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 50px;
+    width: 500px;
+    text-align: center;
+}
+
+.nav-item {
+    position: relative;
+    top: 20%;
+    margin: 10px;
+    font-size: 25px;
+    font-weight: lighter;
+    font-family: sans-serif;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+.site-name {
+    position: absolute;
+    top: 50%;
+    left: 1%;
+    transform: translateY(-50%);
+    font-size: 30px;
+    font-weight: bold;
+    font-family: sans-serif;
+}
+
+/* Main */
+
+.add-new-task-box {
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border: 5px solid black;
+    width: 400px;
+    height: 155px;
+    padding: 15px;
+}
+
+.item {
+    display: inline-block;
+    margin: 10px;
+    font-size: 20px;
+    font-weight: bold;
+    font-family: sans-serif;
+}
+
+.item input {
+    border: none;
+    border-bottom: 3px solid black;
+    font-size: 20px;
+    width: 220px;
+}
+
+.item:last-child input {
+    text-align: center;
+}
+
+.item input:active,
+.item input:focus
+{
+    border: none;
+    border-bottom: 3px solid black;
+    outline: none;
+}
+
+.buttons {
+    text-align: center;
+    margin: 10px;
+}
+
+.buttons button {
+    border: 3px solid black;
+    background-color: white;
+    width: 100px;
+    height: 35px;
+    font-size: 18px;
+    margin: 5px;
+}
+
+.buttons button:active {
+    box-shadow: gray 3px 3px 5px;
+}
+
+select,
+select:focus,
+select:active {
+    border: none;
+    border-bottom: 3px solid black;
+    font-size: 20px;
+    outline: none;
+}
+
+.add-button a {
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+    width: 65px;
+    height: 65px;
+    background: url("../img/add-button.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    transition: 500ms;
+}
+
+.add-button a:hover {
+    transform: rotate(180deg);
+}

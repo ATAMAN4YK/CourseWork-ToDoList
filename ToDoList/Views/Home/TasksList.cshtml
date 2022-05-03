@@ -1,0 +1,125 @@
+﻿@model TasksListViewModel
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <title>TO DO LIST</title>
+        <link rel="stylesheet" href="~/css/TasksList.css"/>
+    </head>
+    <body>
+        <div class="header">
+            <span class="site-name">TO DO LIST</span>
+            <nav>
+                <span class="nav-item"><a asp-controller="Home" asp-action="TasksList">Task List</a></span>
+                <span class="nav-item"><a asp-controller="Home" asp-action="CategoriesList">Categories</a></span>
+            </nav>
+        </div>
+        <div class="main">
+            <div class="tasks">
+                <span class="not-completed-tasks">Not Completed Tasks</span>
+                @foreach(var task in Model.NotCompletedTasks)
+                {
+                <div class="task">
+                    <div class="task-head">
+                        <span class="task-name">@task.TaskName</span>
+                        <span class="task-deadline">@task.DeadLine.Value</span>
+                        @foreach(var category in Model.Categories)
+                        {
+                            if(task.Category == category.Id)
+                            {
+                                <span class="task-category">@category.Name</span>
+                            }
+                        }
+                        @if(task.IsCompleted == true)
+                        {
+                            <span class="is-completed-done">Completed</span>    
+                        }
+                        else
+                        {
+                            <span class="is-completed-not-done">Not Completed</span>
+                        }
+                    </div>
+                    <span class="task-text">@task.TaskText</span>
+                    <div class="buttons">
+                        <form method="post" asp-action="DeleteTask">
+                            <button class="delete-button" type="submit">Delete</button>
+                            <input type="hidden" name="TaskId" value="@task.Id"/>
+                        </form>
+                        @if(task.IsCompleted == true)
+                        {
+                        <form method="post" asp-action="NotDoneTask">
+                            <button class="done-button" type="submit">Not done</button>
+                            <input type="hidden" name="TaskId" value="@task.Id"/>
+                        </form>
+                        }
+                        else
+                        {
+                        <form method="post" asp-action="DoneTask">
+                            <button class="done-button" type="submit">Already done</button>
+                            <input type="hidden" name="TaskId" value="@task.Id"/>
+                        </form>                        
+                        <form method="post" asp-action="DoneTask">
+                            <button class="done-button" type="submit">Edit</button>
+                            <input type="hidden" name="TaskId" value="@task.Id"/>
+                        </form>
+                        }
+                    </div>
+                </div>
+                }
+            </div>
+
+            <div class="tasks">
+                <span class="completed-tasks">Completed Tasks</span>
+                @foreach(var task in Model.CompletedTasks)
+                {
+                <div class="task">
+                    <div class="task-head">
+                        <span class="task-name"><del>@task.TaskName</del></span>
+                        <span class="task-deadline">@task.FinishDate</span>
+                        @foreach(var category in Model.Categories)
+                        {
+                            if(task.Category == category.Id)
+                            {
+                                <span class="task-category">@category.Name</span>
+                            }
+                        }
+                        @if(task.IsCompleted == true)
+                        {
+                            <span class="is-completed-done">Completed</span>    
+                        }
+                        else
+                        {
+                            <span class="is-completed-not-done">Not Completed</span>
+                        }
+                    </div>
+                    <span class="task-text">@task.TaskText</span>
+                    <div class="buttons">
+                        <form method="post" asp-action="DeleteTask">
+                            <button class="delete-button" type="submit">Delete</button>
+                            <input type="hidden" name="TaskId" value="@task.Id"/>
+                        </form>
+                        @if(task.IsCompleted == true)
+                        {
+                        <form method="post" asp-action="NotDoneTask">
+                            <button class="done-button" type="submit">Not done</button>
+                            <input type="hidden" name="TaskId" value="@task.Id"/>
+                        </form>
+                        }
+                        else
+                        {
+                        <form method="post" asp-action="DoneTask">
+                            <button class="done-button" type="submit">Already done</button>
+                            <input type="hidden" name="TaskId" value="@task.Id"/>
+                        </form>
+                        }
+                    </div>
+                </div>
+                }
+        </div>
+
+        <div class="add-button">
+            <a asp-controller="Home" asp-action="CreateTask"></a>
+        </div>
+    </body>
+</html>

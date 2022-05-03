@@ -1,0 +1,46 @@
+﻿@model List<Category>
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <title>TO DO LIST</title>
+        <link rel="stylesheet" href="~/css/CategoriesList.css"/>
+    </head>
+    <body>
+        <div class="header">
+            <span class="site-name">TO DO LIST</span>
+            <nav>
+                <span class="nav-item"><a asp-controller="Home" asp-action="TasksList">Task List</a></span>
+                <span class="nav-item"><a asp-controller="Home" asp-action="CategoriesList">Categories</a></span>
+            </nav>
+        </div>
+        <div class="main">
+            <div class="categories">
+                <span class="categories-title">Categories</span>
+                @foreach(var category in Model)
+                {
+                <div class="category">
+                    <div class="category-head-head">
+                        <span class="category-name">@category.Name</span>
+                    </div>
+                    <span class="category-description">@category.Description</span>
+                    <div class="buttons">
+                        <form method="post" asp-action="DeleteCategory">
+                            <button class="delete-button" type="submit">Delete</button>
+                            <input type="hidden" name="id" value="@category.Id"/>
+                        </form>                   
+                        <form method="post" asp-action="EditCategory">
+                            <button class="edit-button" type="submit">Edit</button>
+                            <input type="hidden" name="id" value="@category.Id"/>
+                        </form>
+                    </div>
+                </div>
+                }
+            </div>
+
+        <div class="add-button">
+            <a asp-controller="Home" asp-action="CreateCategory"></a>
+        </div>
+    </body>
+</html>
