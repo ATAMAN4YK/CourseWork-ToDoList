@@ -1,0 +1,12 @@
+{
+  "ExpandedNodes": [
+    "",
+    "\\MSSQLDataBase",
+    "\\ToDoList",
+    "\\ToDoListData",
+    "\\ToDoList\\Views",
+    "\\ToDoList\\Views\\Home"
+  ],
+  "SelectedNode": "\\ToDoList\\Views\\Home\\TasksList.cshtml",
+  "PreviewInSolutionExplorer": false
+}

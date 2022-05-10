@@ -1,0 +1,15 @@
+C:\Users\Admin\Desktop\Learning\SEC\ToDoList\XMLDataBase\bin\Debug\net6.0\XMLDataBase.deps.json
+C:\Users\Admin\Desktop\Learning\SEC\ToDoList\XMLDataBase\bin\Debug\net6.0\XMLDataBase.dll
+C:\Users\Admin\Desktop\Learning\SEC\ToDoList\XMLDataBase\bin\Debug\net6.0\XMLDataBase.pdb
+C:\Users\Admin\Desktop\Learning\SEC\ToDoList\XMLDataBase\bin\Debug\net6.0\ToDoListData.dll
+C:\Users\Admin\Desktop\Learning\SEC\ToDoList\XMLDataBase\bin\Debug\net6.0\ToDoListData.pdb
+C:\Users\Admin\Desktop\Learning\SEC\ToDoList\XMLDataBase\obj\Debug\net6.0\XMLDataBase.csproj.AssemblyReference.cache
+C:\Users\Admin\Desktop\Learning\SEC\ToDoList\XMLDataBase\obj\Debug\net6.0\XMLDataBase.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Admin\Desktop\Learning\SEC\ToDoList\XMLDataBase\obj\Debug\net6.0\XMLDataBase.AssemblyInfoInputs.cache
+C:\Users\Admin\Desktop\Learning\SEC\ToDoList\XMLDataBase\obj\Debug\net6.0\XMLDataBase.AssemblyInfo.cs
+C:\Users\Admin\Desktop\Learning\SEC\ToDoList\XMLDataBase\obj\Debug\net6.0\XMLDataBase.csproj.CoreCompileInputs.cache
+C:\Users\Admin\Desktop\Learning\SEC\ToDoList\XMLDataBase\obj\Debug\net6.0\XMLDataBase.csproj.CopyComplete
+C:\Users\Admin\Desktop\Learning\SEC\ToDoList\XMLDataBase\obj\Debug\net6.0\XMLDataBase.dll
+C:\Users\Admin\Desktop\Learning\SEC\ToDoList\XMLDataBase\obj\Debug\net6.0\refint\XMLDataBase.dll
+C:\Users\Admin\Desktop\Learning\SEC\ToDoList\XMLDataBase\obj\Debug\net6.0\XMLDataBase.pdb
+C:\Users\Admin\Desktop\Learning\SEC\ToDoList\XMLDataBase\obj\Debug\net6.0\ref\XMLDataBase.dll

@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Admin\\Desktop\\Програмування\\SEC\\ToDoList\\ToDoList\\ToDoList.csproj": {}
+    "C:\\Users\\Admin\\Desktop\\Learning\\SEC\\ToDoList\\ToDoList\\ToDoList.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Admin\\Desktop\\Програмування\\SEC\\ToDoList\\MSSQLDataBase\\MSSQLDataBase.csproj": {
+    "C:\\Users\\Admin\\Desktop\\Learning\\SEC\\ToDoList\\MSSQLDataBase\\MSSQLDataBase.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Admin\\Desktop\\Програмування\\SEC\\ToDoList\\MSSQLDataBase\\MSSQLDataBase.csproj",
+        "projectUniqueName": "C:\\Users\\Admin\\Desktop\\Learning\\SEC\\ToDoList\\MSSQLDataBase\\MSSQLDataBase.csproj",
         "projectName": "MSSQLDataBase",
-        "projectPath": "C:\\Users\\Admin\\Desktop\\Програмування\\SEC\\ToDoList\\MSSQLDataBase\\MSSQLDataBase.csproj",
+        "projectPath": "C:\\Users\\Admin\\Desktop\\Learning\\SEC\\ToDoList\\MSSQLDataBase\\MSSQLDataBase.csproj",
         "packagesPath": "C:\\Users\\Admin\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Admin\\Desktop\\Програмування\\SEC\\ToDoList\\MSSQLDataBase\\obj\\",
+        "outputPath": "C:\\Users\\Admin\\Desktop\\Learning\\SEC\\ToDoList\\MSSQLDataBase\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
@@ -33,8 +33,8 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "C:\\Users\\Admin\\Desktop\\Програмування\\SEC\\ToDoList\\ToDoListData\\ToDoListData.csproj": {
-                "projectPath": "C:\\Users\\Admin\\Desktop\\Програмування\\SEC\\ToDoList\\ToDoListData\\ToDoListData.csproj"
+              "C:\\Users\\Admin\\Desktop\\Learning\\SEC\\ToDoList\\ToDoListData\\ToDoListData.csproj": {
+                "projectPath": "C:\\Users\\Admin\\Desktop\\Learning\\SEC\\ToDoList\\ToDoListData\\ToDoListData.csproj"
               }
             }
           }
@@ -81,14 +81,14 @@
         }
       }
     },
-    "C:\\Users\\Admin\\Desktop\\Програмування\\SEC\\ToDoList\\ToDoListData\\ToDoListData.csproj": {
+    "C:\\Users\\Admin\\Desktop\\Learning\\SEC\\ToDoList\\ToDoListData\\ToDoListData.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Admin\\Desktop\\Програмування\\SEC\\ToDoList\\ToDoListData\\ToDoListData.csproj",
+        "projectUniqueName": "C:\\Users\\Admin\\Desktop\\Learning\\SEC\\ToDoList\\ToDoListData\\ToDoListData.csproj",
         "projectName": "ToDoListData",
-        "projectPath": "C:\\Users\\Admin\\Desktop\\Програмування\\SEC\\ToDoList\\ToDoListData\\ToDoListData.csproj",
+        "projectPath": "C:\\Users\\Admin\\Desktop\\Learning\\SEC\\ToDoList\\ToDoListData\\ToDoListData.csproj",
         "packagesPath": "C:\\Users\\Admin\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Admin\\Desktop\\Програмування\\SEC\\ToDoList\\ToDoListData\\obj\\",
+        "outputPath": "C:\\Users\\Admin\\Desktop\\Learning\\SEC\\ToDoList\\ToDoListData\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
@@ -150,14 +150,14 @@
         }
       }
     },
-    "C:\\Users\\Admin\\Desktop\\Програмування\\SEC\\ToDoList\\ToDoList\\ToDoList.csproj": {
+    "C:\\Users\\Admin\\Desktop\\Learning\\SEC\\ToDoList\\ToDoList\\ToDoList.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Admin\\Desktop\\Програмування\\SEC\\ToDoList\\ToDoList\\ToDoList.csproj",
+        "projectUniqueName": "C:\\Users\\Admin\\Desktop\\Learning\\SEC\\ToDoList\\ToDoList\\ToDoList.csproj",
         "projectName": "ToDoList",
-        "projectPath": "C:\\Users\\Admin\\Desktop\\Програмування\\SEC\\ToDoList\\ToDoList\\ToDoList.csproj",
+        "projectPath": "C:\\Users\\Admin\\Desktop\\Learning\\SEC\\ToDoList\\ToDoList\\ToDoList.csproj",
         "packagesPath": "C:\\Users\\Admin\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Admin\\Desktop\\Програмування\\SEC\\ToDoList\\ToDoList\\obj\\",
+        "outputPath": "C:\\Users\\Admin\\Desktop\\Learning\\SEC\\ToDoList\\ToDoList\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
@@ -179,11 +179,14 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "C:\\Users\\Admin\\Desktop\\Програмування\\SEC\\ToDoList\\MSSQLDataBase\\MSSQLDataBase.csproj": {
-                "projectPath": "C:\\Users\\Admin\\Desktop\\Програмування\\SEC\\ToDoList\\MSSQLDataBase\\MSSQLDataBase.csproj"
+              "C:\\Users\\Admin\\Desktop\\Learning\\SEC\\ToDoList\\MSSQLDataBase\\MSSQLDataBase.csproj": {
+                "projectPath": "C:\\Users\\Admin\\Desktop\\Learning\\SEC\\ToDoList\\MSSQLDataBase\\MSSQLDataBase.csproj"
               },
-              "C:\\Users\\Admin\\Desktop\\Програмування\\SEC\\ToDoList\\ToDoListData\\ToDoListData.csproj": {
-                "projectPath": "C:\\Users\\Admin\\Desktop\\Програмування\\SEC\\ToDoList\\ToDoListData\\ToDoListData.csproj"
+              "C:\\Users\\Admin\\Desktop\\Learning\\SEC\\ToDoList\\ToDoListData\\ToDoListData.csproj": {
+                "projectPath": "C:\\Users\\Admin\\Desktop\\Learning\\SEC\\ToDoList\\ToDoListData\\ToDoListData.csproj"
+              },
+              "C:\\Users\\Admin\\Desktop\\Learning\\SEC\\ToDoList\\XMLDataBase\\XMLDataBase.csproj": {
+                "projectPath": "C:\\Users\\Admin\\Desktop\\Learning\\SEC\\ToDoList\\XMLDataBase\\XMLDataBase.csproj"
               }
             }
           }
@@ -221,6 +224,69 @@
             "Microsoft.AspNetCore.App": {
               "privateAssets": "none"
             },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.200\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\Admin\\Desktop\\Learning\\SEC\\ToDoList\\XMLDataBase\\XMLDataBase.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\Admin\\Desktop\\Learning\\SEC\\ToDoList\\XMLDataBase\\XMLDataBase.csproj",
+        "projectName": "XMLDataBase",
+        "projectPath": "C:\\Users\\Admin\\Desktop\\Learning\\SEC\\ToDoList\\XMLDataBase\\XMLDataBase.csproj",
+        "packagesPath": "C:\\Users\\Admin\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Admin\\Desktop\\Learning\\SEC\\ToDoList\\XMLDataBase\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\Admin\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {
+              "C:\\Users\\Admin\\Desktop\\Learning\\SEC\\ToDoList\\ToDoListData\\ToDoListData.csproj": {
+                "projectPath": "C:\\Users\\Admin\\Desktop\\Learning\\SEC\\ToDoList\\ToDoListData\\ToDoListData.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
             "Microsoft.NETCore.App": {
               "privateAssets": "all"
             }

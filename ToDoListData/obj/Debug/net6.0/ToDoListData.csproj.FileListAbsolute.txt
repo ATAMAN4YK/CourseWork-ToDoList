@@ -10,3 +10,15 @@ C:\Users\Admin\Desktop\Програмування\SEC\ToDoList\ToDoListData\obj\
 C:\Users\Admin\Desktop\Програмування\SEC\ToDoList\ToDoListData\obj\Debug\net6.0\refint\ToDoListData.dll
 C:\Users\Admin\Desktop\Програмування\SEC\ToDoList\ToDoListData\obj\Debug\net6.0\ToDoListData.pdb
 C:\Users\Admin\Desktop\Програмування\SEC\ToDoList\ToDoListData\obj\Debug\net6.0\ref\ToDoListData.dll
+C:\Users\Admin\Desktop\Learning\SEC\ToDoList\ToDoListData\bin\Debug\net6.0\ToDoListData.deps.json
+C:\Users\Admin\Desktop\Learning\SEC\ToDoList\ToDoListData\bin\Debug\net6.0\ToDoListData.dll
+C:\Users\Admin\Desktop\Learning\SEC\ToDoList\ToDoListData\bin\Debug\net6.0\ToDoListData.pdb
+C:\Users\Admin\Desktop\Learning\SEC\ToDoList\ToDoListData\obj\Debug\net6.0\ToDoListData.csproj.AssemblyReference.cache
+C:\Users\Admin\Desktop\Learning\SEC\ToDoList\ToDoListData\obj\Debug\net6.0\ToDoListData.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Admin\Desktop\Learning\SEC\ToDoList\ToDoListData\obj\Debug\net6.0\ToDoListData.AssemblyInfoInputs.cache
+C:\Users\Admin\Desktop\Learning\SEC\ToDoList\ToDoListData\obj\Debug\net6.0\ToDoListData.AssemblyInfo.cs
+C:\Users\Admin\Desktop\Learning\SEC\ToDoList\ToDoListData\obj\Debug\net6.0\ToDoListData.csproj.CoreCompileInputs.cache
+C:\Users\Admin\Desktop\Learning\SEC\ToDoList\ToDoListData\obj\Debug\net6.0\ToDoListData.dll
+C:\Users\Admin\Desktop\Learning\SEC\ToDoList\ToDoListData\obj\Debug\net6.0\refint\ToDoListData.dll
+C:\Users\Admin\Desktop\Learning\SEC\ToDoList\ToDoListData\obj\Debug\net6.0\ToDoListData.pdb
+C:\Users\Admin\Desktop\Learning\SEC\ToDoList\ToDoListData\obj\Debug\net6.0\ref\ToDoListData.dll

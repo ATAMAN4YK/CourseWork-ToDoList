@@ -20,6 +20,7 @@
   <ItemGroup>
     <ProjectReference Include="..\MSSQLDataBase\MSSQLDataBase.csproj" />
     <ProjectReference Include="..\ToDoListData\ToDoListData.csproj" />
+    <ProjectReference Include="..\XMLDataBase\XMLDataBase.csproj" />
   </ItemGroup>
 
 </Project>

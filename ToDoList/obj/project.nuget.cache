@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "PhTmFqiaxbL4FINyoSRDLWuWKIP0urE2nb8stlv2gfLbUSrfVfr0Nl2nigMCLMu5vxb+6tpyShrZE3WuLe984w==",
+  "dgSpecHash": "v6ut/sYoBPQHRefGi6D4AH5EBpzi67J7pLJfibieRcOb0LqEHnCoGIjTcbMW679JhDBQSmsy8plSRM+HF57zkA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Admin\\Desktop\\Програмування\\SEC\\ToDoList\\ToDoList\\ToDoList.csproj",
+  "projectFilePath": "C:\\Users\\Admin\\Desktop\\Learning\\SEC\\ToDoList\\ToDoList\\ToDoList.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Admin\\.nuget\\packages\\dapper\\2.0.123\\dapper.2.0.123.nupkg.sha512",
     "C:\\Users\\Admin\\.nuget\\packages\\lambda2js.signed\\3.1.3\\lambda2js.signed.3.1.3.nupkg.sha512",

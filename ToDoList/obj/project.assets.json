@@ -1457,6 +1457,19 @@
         "runtime": {
           "bin/placeholder/ToDoListData.dll": {}
         }
+      },
+      "XMLDataBase/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "dependencies": {
+          "ToDoListData": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/XMLDataBase.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/XMLDataBase.dll": {}
+        }
       }
     }
   },
@@ -5402,6 +5415,11 @@
       "type": "project",
       "path": "../ToDoListData/ToDoListData.csproj",
       "msbuildProject": "../ToDoListData/ToDoListData.csproj"
+    },
+    "XMLDataBase/1.0.0": {
+      "type": "project",
+      "path": "../XMLDataBase/XMLDataBase.csproj",
+      "msbuildProject": "../XMLDataBase/XMLDataBase.csproj"
     }
   },
   "projectFileDependencyGroups": {
@@ -5409,7 +5427,8 @@
       "Dapper >= 2.0.123",
       "MSSQLDataBase >= 1.0.0",
       "System.Data.SqlClient >= 4.8.3",
-      "ToDoListData >= 1.0.0"
+      "ToDoListData >= 1.0.0",
+      "XMLDataBase >= 1.0.0"
     ]
   },
   "packageFolders": {
@@ -5420,11 +5439,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Admin\\Desktop\\Програмування\\SEC\\ToDoList\\ToDoList\\ToDoList.csproj",
+      "projectUniqueName": "C:\\Users\\Admin\\Desktop\\Learning\\SEC\\ToDoList\\ToDoList\\ToDoList.csproj",
       "projectName": "ToDoList",
-      "projectPath": "C:\\Users\\Admin\\Desktop\\Програмування\\SEC\\ToDoList\\ToDoList\\ToDoList.csproj",
+      "projectPath": "C:\\Users\\Admin\\Desktop\\Learning\\SEC\\ToDoList\\ToDoList\\ToDoList.csproj",
       "packagesPath": "C:\\Users\\Admin\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Admin\\Desktop\\Програмування\\SEC\\ToDoList\\ToDoList\\obj\\",
+      "outputPath": "C:\\Users\\Admin\\Desktop\\Learning\\SEC\\ToDoList\\ToDoList\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
@@ -5446,11 +5465,14 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "projectReferences": {
-            "C:\\Users\\Admin\\Desktop\\Програмування\\SEC\\ToDoList\\MSSQLDataBase\\MSSQLDataBase.csproj": {
-              "projectPath": "C:\\Users\\Admin\\Desktop\\Програмування\\SEC\\ToDoList\\MSSQLDataBase\\MSSQLDataBase.csproj"
+            "C:\\Users\\Admin\\Desktop\\Learning\\SEC\\ToDoList\\MSSQLDataBase\\MSSQLDataBase.csproj": {
+              "projectPath": "C:\\Users\\Admin\\Desktop\\Learning\\SEC\\ToDoList\\MSSQLDataBase\\MSSQLDataBase.csproj"
             },
-            "C:\\Users\\Admin\\Desktop\\Програмування\\SEC\\ToDoList\\ToDoListData\\ToDoListData.csproj": {
-              "projectPath": "C:\\Users\\Admin\\Desktop\\Програмування\\SEC\\ToDoList\\ToDoListData\\ToDoListData.csproj"
+            "C:\\Users\\Admin\\Desktop\\Learning\\SEC\\ToDoList\\ToDoListData\\ToDoListData.csproj": {
+              "projectPath": "C:\\Users\\Admin\\Desktop\\Learning\\SEC\\ToDoList\\ToDoListData\\ToDoListData.csproj"
+            },
+            "C:\\Users\\Admin\\Desktop\\Learning\\SEC\\ToDoList\\XMLDataBase\\XMLDataBase.csproj": {
+              "projectPath": "C:\\Users\\Admin\\Desktop\\Learning\\SEC\\ToDoList\\XMLDataBase\\XMLDataBase.csproj"
             }
           }
         }

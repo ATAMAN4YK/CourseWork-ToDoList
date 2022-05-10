@@ -120,7 +120,7 @@ namespace MSSQLDataBase
                 var taskList = conn.Query<Models.Task>(
                     "SELECT Id, TaskName, TaskText, Deadline, FinishDate, Category, isCompleted " +
                     "FROM Tasks " +
-                    "ORDER BY isCompleted, Deadline").ToList();
+                    "ORDER BY FinishDate, Deadline").ToList();
 
                 return taskList;
             }

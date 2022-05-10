@@ -168,3 +168,17 @@ a {
     transform: translateX(-50%);
     display: inline-block;
 }
+
+.select-database,
+.select-database:focus,
+.select-database:active {
+    position: absolute;
+    top: 50%;
+    right: 30px;
+    transform: translateY(-50%);
+    color: white;
+    background-color: black;
+    border: none;
+    font-size: 20px;
+    outline: none;
+}

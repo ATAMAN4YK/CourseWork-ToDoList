@@ -11,7 +11,8 @@
           "Dapper": "2.0.123",
           "MSSQLDataBase": "1.0.0",
           "System.Data.SqlClient": "4.8.3",
-          "ToDoListData": "1.0.0"
+          "ToDoListData": "1.0.0",
+          "XMLDataBase": "1.0.0"
         },
         "runtime": {
           "ToDoList.dll": {}
@@ -860,6 +861,14 @@
         "runtime": {
           "ToDoListData.dll": {}
         }
+      },
+      "XMLDataBase/1.0.0": {
+        "dependencies": {
+          "ToDoListData": "1.0.0"
+        },
+        "runtime": {
+          "XMLDataBase.dll": {}
+        }
       }
     }
   },
@@ -1512,6 +1521,11 @@
       "sha512": ""
     },
     "ToDoListData/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "XMLDataBase/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "p4o2DwuUunvc/rNkVLZlfJGQonTrnsFjzIGkevl70OXILXz8/DC2gBmVuOY2TasThxxDNINXgP2+AcxgZBQ6Yg==",
+  "dgSpecHash": "Gx+TavkvDfripvKUDXjmZljKii6dYew0VhzsRpAHloJSdBkoLn9d7y06ST1as1zdizCsUgEDr8u9fCzCuVNboQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Admin\\Desktop\\Програмування\\SEC\\ToDoList\\MSSQLDataBase\\MSSQLDataBase.csproj",
+  "projectFilePath": "C:\\Users\\Admin\\Desktop\\Learning\\SEC\\ToDoList\\MSSQLDataBase\\MSSQLDataBase.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Admin\\.nuget\\packages\\dapper\\2.0.123\\dapper.2.0.123.nupkg.sha512",
     "C:\\Users\\Admin\\.nuget\\packages\\lambda2js.signed\\3.1.3\\lambda2js.signed.3.1.3.nupkg.sha512",

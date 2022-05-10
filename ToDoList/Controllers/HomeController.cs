@@ -1,6 +1,7 @@
 ﻿using System.Linq;
 using Microsoft.AspNetCore.Mvc;
 using MSSQLDataBase;
+using XMLDataBase;
 using ToDoList.ViewModels;
 using ToDoListData.Models;
 using Models = ToDoListData.Models;
@@ -10,7 +11,23 @@ namespace ToDoList.Controllers
 {
     public class HomeController : Controller
     {
-        IDataProvider DataBase = new MSDataProvider();
+        static int selectedDB = 0;
+        static IDataProvider DataBase = new MSDataProvider();
+        public IActionResult ChangeDataBase(string dataBase)
+        {
+            if (dataBase == "MSDataBase")
+            {
+                DataBase = new MSDataProvider();
+                selectedDB = 0;
+            }
+            else
+            {
+                DataBase = new XMLDataProvider();
+                selectedDB = 1;
+            }
+
+            return RedirectToAction("TasksList");
+        }
         public IActionResult TasksList()
         {
             var taskList = DataBase.GetTasksList();
@@ -18,7 +35,8 @@ namespace ToDoList.Controllers
             {
                 CompletedTasks = taskList.Where(item => item.IsCompleted).ToList(),
                 NotCompletedTasks = taskList.Where(item => !item.IsCompleted).ToList(),
-                Categories = DataBase.GetCategoryList()
+                Categories = DataBase.GetCategoryList(),
+                SelectedDB = selectedDB
             };
             return View(viewModel);
         }
@@ -57,6 +75,7 @@ namespace ToDoList.Controllers
         {
             var task = DataBase.GetTaskById(TaskId);
             task.IsCompleted = task.IsCompleted ? false : true;
+            task.FinishDate = null;
             DataBase.UpdateTask(task);
             return RedirectToAction("TasksList");
         }
