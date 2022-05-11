@@ -5,7 +5,7 @@
     <head>
         <meta charset="utf-8" />
         <title>EDIT TASK</title>
-        <link rel="stylesheet" href="~/css/CreateTask.css"/>
+        <link rel="stylesheet" href="~/css/EditTask.css"/>
     </head>
     <body>
         <div class="header">
@@ -28,8 +28,14 @@
                 </div>
                 <div class="item">
                     <label for="DeadLine">DeadLine</label>
-                    <input name="DeadLine" type="datetime-local" value=@Model.Task.DeadLine.Value.ToString("yyyy-MM-ddTHH:MM") />
-                <div class="item">
+                    @if (Model.Task.DeadLine != null) {
+                        <input name="DeadLine" type="datetime-local" value=@Model.Task.DeadLine.Value.ToString("yyyy-MM-ddTHH:MM") />
+                    } 
+                    else 
+                    {
+                        <input name="DeadLine" type="datetime-local" />
+                    }
+                <div class="item category">
                     <label for="categories">Category</label>
                     <select name="Category">
                         @foreach(var category in Model.Categories) {

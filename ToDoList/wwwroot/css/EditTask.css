@@ -127,3 +127,7 @@ select:active {
 .add-button a:hover {
     transform: rotate(180deg);
 }
+
+.category {
+    margin-left: 0;
+}

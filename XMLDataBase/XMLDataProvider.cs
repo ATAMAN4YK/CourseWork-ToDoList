@@ -20,33 +20,53 @@ namespace XMLDataBase
             catch (Exception)
             {
                 xTasks = new XDocument(new XElement("tasks"));
-                xTasks.Save(@"../XMLDataBase/Tasks.xml");
+                xTasks.Save(@"../XMLDataBase/DataBase/Tasks.xml");
                 maxTaskId = 0;
             }
 
             try
             {
-                xCategories = XDocument.Load(@"../XMLDataBase/Categories.xml");
+                xCategories = XDocument.Load(@"../XMLDataBase/DataBase/Categories.xml");
             }
             catch (Exception)
             {
                 xCategories = new XDocument(new XElement("categories"));
-                xCategories.Save(@"../XMLDataBase/Categories.xml");
+                xCategories.Save(@"../XMLDataBase/DataBase/Categories.xml");
                 maxCategoryId = 0;
             }
         }
-        private void DefineMaxTaskId(IEnumerable<Models.Task> tasksList)
+        private void DefineMaxTaskId()
         {
-            maxTaskId = tasksList.Max(task => task.Id);
+            IDataProvider db = new XMLDataProvider();
+            List<Models.Task> tasksList = db.GetTasksList();
+            if (tasksList.Count != 0)
+            {
+                maxTaskId = tasksList.Max(task => task.Id);
+            }
+            else
+            {
+                maxTaskId = 0;
+            }
         }
-        private void DefineMaxCategoryId(IEnumerable<Category> categoriesList)
+        private void DefineMaxCategoryId()
         {
-            maxCategoryId = categoriesList.Max(category => category.Id);
+            IDataProvider db = new XMLDataProvider();
+            List<Category> categoriesList = db.GetCategoryList();
+            if (categoriesList.Count != 0)
+            {
+                maxCategoryId = categoriesList.Max(category => category.Id);
+
+            }
+            else
+            {
+                maxCategoryId = 0;
+            }
         }
         void IDataProvider.AddCategory(NewCategory category)
         {
             XDocument xCategoriesDocument = XDocument.Load(@"../XMLDataBase/DataBase/Categories.xml");
             XElement? categoriesNode = xCategoriesDocument.Element("categories");
+            DefineMaxCategoryId();
             if (categoriesNode != null)
             {
                 categoriesNode.Add(
@@ -62,6 +82,7 @@ namespace XMLDataBase
         {
             XDocument xTasksDocument = XDocument.Load(@"../XMLDataBase/DataBase/Tasks.xml");
             XElement? tasksNode = xTasksDocument.Element("tasks");
+            DefineMaxTaskId();
             if (tasksNode != null)
             {
                 
@@ -92,6 +113,16 @@ namespace XMLDataBase
                 {
                     removeCategory.Remove();
                     xCategoriesDocument.Save(@"../XMLDataBase/DataBase/Categories.xml");
+
+                    // Set null categoryId in tasks where been deleted category
+                    IDataProvider db = new XMLDataProvider();
+                    List<Models.Task> nullCategoryTasksList = db.GetTasksList()
+                        .Where(task => task.Category == category.Id).ToList(); 
+                    foreach (Models.Task task in nullCategoryTasksList)
+                    {
+                        task.Category = null;
+                        db.UpdateTask(task);
+                    }
                 }
             }
         }
@@ -150,7 +181,6 @@ namespace XMLDataBase
                         Description = categoryDescription
                     });
                 }
-                DefineMaxCategoryId(categoriesList);
             }
             return categoriesList;
         }
@@ -169,7 +199,7 @@ namespace XMLDataBase
                 TaskName = task.Element("TaskName").Value,
                 TaskText = task.Element("TaskText").Value == "Null" ? null : task.Element("TaskText").Value,
                 DeadLine = task.Element("DeadLine").Value == "Null" ? null : DateTime.Parse(task.Element("DeadLine").Value),
-                Category = Int32.Parse(task.Element("Category").Attribute("id").Value),
+                Category = task.Element("Category").Attribute("id").Value == "Null" ? null : Int32.Parse(task.Element("Category").Attribute("id").Value),
                 IsCompleted = bool.Parse(task.Element("isCompleted").Value),
                 FinishDate = task.Element("FinishDate").Value == "Null" ? null : DateTime.Parse(task.Element("FinishDate").Value)
             };
@@ -188,7 +218,7 @@ namespace XMLDataBase
                     string taskName = task.Element("TaskName").Value;
                     string? taskText = task.Element("TaskText").Value == "Null" ? null : task.Element("TaskText").Value;
                     DateTime? deadLine = task.Element("DeadLine").Value == "Null" ? null : DateTime.Parse(task.Element("DeadLine").Value);
-                    int categoryId = Int32.Parse(task.Element("Category").Attribute("id").Value);
+                    int? categoryId = task.Element("Category").Attribute("id").Value == "Null" ? null : Int32.Parse(task.Element("Category").Attribute("id").Value);
                     bool isCompleted = bool.Parse(task.Element("isCompleted").Value);
                     DateTime? finishDate = task.Element("FinishDate").Value == "Null" ? null : DateTime.Parse(task.Element("FinishDate").Value);
 
@@ -203,7 +233,6 @@ namespace XMLDataBase
                         IsCompleted = isCompleted
                     });
                 }
-                DefineMaxTaskId(tasksList);
             }
             return tasksList;
         }

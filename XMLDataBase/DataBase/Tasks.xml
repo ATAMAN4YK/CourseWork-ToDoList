@@ -1,10 +1,42 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <tasks>
   <task id="1">
-    <TaskName>111112111</TaskName>
-    <TaskText>28</TaskText>
-    <DeadLine>2022-05-10T16:05:00</DeadLine>
+    <TaskName>OpenGL API</TaskName>
+    <TaskText>-_-</TaskText>
+    <DeadLine>2022-05-17T17:05:00</DeadLine>
     <Category id="0" />
+    <isCompleted>False</isCompleted>
+    <FinishDate>Null</FinishDate>
+  </task>
+  <task id="2">
+    <TaskName>Buy a milk</TaskName>
+    <TaskText></TaskText>
+    <DeadLine>2022-05-03T18:33:00</DeadLine>
+    <Category id="1" />
+    <isCompleted>True</isCompleted>
+    <FinishDate>2022-05-11T17:50:15.4159785+03:00</FinishDate>
+  </task>
+  <task id="3">
+    <TaskName>Math</TaskName>
+    <TaskText></TaskText>
+    <DeadLine>2022-05-20T13:30:00</DeadLine>
+    <Category id="1" />
+    <isCompleted>True</isCompleted>
+    <FinishDate>2022-05-11T17:50:13.5563951+03:00</FinishDate>
+  </task>
+  <task id="4">
+    <TaskName>Wash the car</TaskName>
+    <TaskText></TaskText>
+    <DeadLine>2022-05-11T18:33:00</DeadLine>
+    <Category id="1" />
+    <isCompleted>False</isCompleted>
+    <FinishDate>Null</FinishDate>
+  </task>
+  <task id="5">
+    <TaskName>TestTask</TaskName>
+    <TaskText>TestTask</TaskText>
+    <DeadLine>Null</DeadLine>
+    <Category id="Null" />
     <isCompleted>False</isCompleted>
     <FinishDate>Null</FinishDate>
   </task>

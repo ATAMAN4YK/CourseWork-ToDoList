@@ -15,26 +15,55 @@
                 <span class="nav-item"><a asp-controller="Home" asp-action="CategoriesList">Categories</a></span>
             </nav>
             <form asp-controller="Home" asp-action="ChangeDataBase" method="post">
-                <select name="dataBase" class="select-database" onchange="this.form.submit()">
-                @if(Model.SelectedDB == 0)
-                {
-                    <option value="MSDataBase" selected>MSSQLDataBase</option>
-                    <option value="XMLDataBase">XMLDataBase</option>
-                }
-                else
-                {
-                    <option value="MSDataBase">MSSQLDataBase</option>
-                    <option value="XMLDataBase" selected>XMLDataBase</option>
-                }
-            </select>
+                <select name="newSelectedDB" class="select-database" onchange="this.form.submit()">
+                    @if (DataBaseStatus.ChoosedDataBase == (int)DataBaseList.MSSQLDataBase)
+                    {
+                        <option value="0" selected>MSSQLDataBase</option>
+                        <option value="1">XMLDataBase</option>
+                    }
+                    else if (DataBaseStatus.ChoosedDataBase == (int)DataBaseList.XMLDataBase)
+                    {
+                        <option value="0">MSSQLDataBase</option>
+                        <option value="1" selected>XMLDataBase</option>
+                    }
+                </select>
             </form>
         </div>
         <div class="main">
+            <form class="add-new-task-box" asp-controller="Home" asp-action="CreateTask" method="post">
+                <div class="item">
+                    <label for="TaskName">Task Name</label>
+                    <input name="TaskName" type="text" required/>
+                </div>
+                <div class="item">
+                    <label for="TaskText">Task Text</label>
+                    <input name="TaskText" type="text"/>
+                </div>
+                <div class="item">
+                    <label for="DeadLine">DeadLine</label>
+                    <input name="DeadLine" type="datetime-local"/>
+                </div>
+                <div class="item">
+                    <label for="categories">Category</label>
+                    <select name="Category" class="category-select">
+                        @foreach(var category in Model.Categories) {
+                            <option value=@category.Id >@category.Name</option>
+                        }
+                    </select>
+                </div>
+                <div class="buttons">
+                    <button type="reset">Clear</button>
+                    <button type="submit">Create</button>
+                </div>
+            </form>
             <div class="tasks">
                 <span class="not-completed-tasks">Not Completed Tasks</span>
+                @if(Model.NotCompletedTasks.Count == 0) {
+                    <br><span class="red-text">You don't have not completed tasks!</span>
+                }
                 @foreach(var task in Model.NotCompletedTasks)
                 {
-                <div class="task">
+                <div class="task @(DateTime.Now > task.DeadLine ? "missed" : "")">
                     <div class="task-head">
                         <span class="task-name">@task.TaskName</span>
 
@@ -95,6 +124,9 @@
 
             <div class="tasks">
                 <span class="completed-tasks">Completed Tasks</span>
+                @if(Model.CompletedTasks.Count == 0) {
+                    <br><span class="red-text">You don't have completed tasks!</span>
+                }
                 @foreach(var task in Model.CompletedTasks)
                 {
                 <div class="task">
@@ -140,10 +172,6 @@
                     </div>
                 </div>
                 }
-        </div>
-
-        <div class="add-button">
-            <a asp-controller="Home" asp-action="CreateTask"></a>
         </div>
     </body>
 </html>

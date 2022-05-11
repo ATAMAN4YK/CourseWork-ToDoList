@@ -14,8 +14,36 @@
                 <span class="nav-item"><a asp-controller="Home" asp-action="TasksList">Task List</a></span>
                 <span class="nav-item"><a asp-controller="Home" asp-action="CategoriesList">Categories</a></span>
             </nav>
+            <form asp-controller="Home" asp-action="ChangeDataBase" method="post">
+                <select name="newSelectedDB" class="select-database" onchange="this.form.submit()">
+                    @if (DataBaseStatus.ChoosedDataBase == (int)DataBaseList.MSSQLDataBase)
+                    {
+                        <option value="0" selected>MSSQLDataBase</option>
+                        <option value="1">XMLDataBase</option>
+                    }
+                    else if (DataBaseStatus.ChoosedDataBase == (int)DataBaseList.XMLDataBase)
+                    {
+                        <option value="0">MSSQLDataBase</option>
+                        <option value="1" selected>XMLDataBase</option>
+                    }
+                </select>
+            </form>
         </div>
         <div class="main">
+            <form class="add-new-category-box" asp-controller="Home" asp-action="CreateCategory" method="post">
+                <div class="item">
+                    <label for="Name">Category Name</label>
+                    <input name="Name" type="text" required/>
+                </div>
+                <div class="item">
+                    <label for="Description">Description</label>
+                    <input name="Description" type="text"/>
+                </div>
+                <div class="buttons">
+                    <button type="reset">Clear</button>
+                    <button type="submit">Create</button>
+                </div>
+            </form>
             <div class="categories">
                 <span class="categories-title">Categories</span>
                 @foreach(var category in Model)
@@ -38,9 +66,5 @@
                 </div>
                 }
             </div>
-
-        <div class="add-button">
-            <a asp-controller="Home" asp-action="CreateCategory"></a>
-        </div>
     </body>
 </html>

@@ -142,4 +142,75 @@ a {
     display: inline;
 }
 
+.select-database,
+.select-database:focus,
+.select-database:active {
+    position: absolute;
+    top: 50%;
+    right: 30px;
+    transform: translateY(-50%);
+    color: white;
+    background-color: black;
+    border: none;
+    font-size: 20px;
+    outline: none;
+}
+
+/* Add new category */
+
+.add-new-category-box {
+    margin-top: 30px;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    border: 5px solid black;
+    width: 400px;
+    height: 155px;
+    padding: 15px;
+}
+
+.add-new-category-box >.item {
+    display: inline-block;
+    margin: 10px;
+    font-size: 20px;
+    font-weight: bold;
+    font-family: sans-serif;
+}
+
+.add-new-category-box >.item input {
+    border: none;
+    border-bottom: 3px solid black;
+    font-size: 20px;
+    width: 220px;
+}
+
+.add-new-category-box >.item:last-child input {
+    text-align: center;
+}
+
+.add-new-category-box > .item input:active,
+.add-new-category-box > .item input:focus
+{
+    border: none;
+    border-bottom: 3px solid black;
+    outline: none;
+}
+
+.add-new-category-box >.buttons {
+    text-align: center;
+    margin: 10px;
+}
+
+.add-new-category-box >.buttons button {
+    border: 3px solid black;
+    background-color: white;
+    width: 100px;
+    height: 35px;
+    font-size: 18px;
+    margin: 5px;
+}
+
+.add-new-category-box > .buttons button:active {
+    box-shadow: gray 3px 3px 5px;
+}
 

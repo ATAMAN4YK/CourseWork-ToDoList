@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "8UYyWaySNKM0unOrXfyxUP6068n2W2Nemp/AMakZ+ek=",
+  "Hash": "xnl3fJ/C1ctRkVXhJVcDsEVjteoRjJS7Ak3DyV8x2Ro=",
   "Source": "ToDoList",
   "BasePath": "_content/ToDoList",
   "Mode": "Default",
@@ -34,12 +34,12 @@
       "OriginalItemSpec": "wwwroot\\css\\CategoriesList.css"
     },
     {
-      "Identity": "C:\\Users\\Admin\\Desktop\\Learning\\SEC\\ToDoList\\ToDoList\\wwwroot\\css\\CreateCategory.css",
+      "Identity": "C:\\Users\\Admin\\Desktop\\Learning\\SEC\\ToDoList\\ToDoList\\wwwroot\\css\\EditCategory.css",
       "SourceId": "ToDoList",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\Admin\\Desktop\\Learning\\SEC\\ToDoList\\ToDoList\\wwwroot\\",
       "BasePath": "_content/ToDoList",
-      "RelativePath": "css/CreateCategory.css",
+      "RelativePath": "css/EditCategory.css",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -48,15 +48,15 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\css\\CreateCategory.css"
+      "OriginalItemSpec": "wwwroot\\css\\EditCategory.css"
     },
     {
-      "Identity": "C:\\Users\\Admin\\Desktop\\Learning\\SEC\\ToDoList\\ToDoList\\wwwroot\\css\\CreateTask.css",
+      "Identity": "C:\\Users\\Admin\\Desktop\\Learning\\SEC\\ToDoList\\ToDoList\\wwwroot\\css\\EditTask.css",
       "SourceId": "ToDoList",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\Admin\\Desktop\\Learning\\SEC\\ToDoList\\ToDoList\\wwwroot\\",
       "BasePath": "_content/ToDoList",
-      "RelativePath": "css/CreateTask.css",
+      "RelativePath": "css/EditTask.css",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -65,7 +65,7 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\css\\CreateTask.css"
+      "OriginalItemSpec": "wwwroot\\css\\EditTask.css"
     },
     {
       "Identity": "C:\\Users\\Admin\\Desktop\\Learning\\SEC\\ToDoList\\ToDoList\\wwwroot\\css\\Successful.css",

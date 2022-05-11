@@ -1,31 +1,23 @@
-﻿using System.Linq;
-using Microsoft.AspNetCore.Mvc;
-using MSSQLDataBase;
-using XMLDataBase;
+﻿using Microsoft.AspNetCore.Mvc;
 using ToDoList.ViewModels;
 using ToDoListData.Models;
 using Models = ToDoListData.Models;
 using ToDoListData.Providers;
+using ToDoList.DataBaseProvider;
+using MSSQLDataBase;
 
 namespace ToDoList.Controllers
 {
     public class HomeController : Controller
     {
-        static int selectedDB = 0;
-        static IDataProvider DataBase = new MSDataProvider();
-        public IActionResult ChangeDataBase(string dataBase)
+        static IDataProvider DataBase;
+        public HomeController(IDataProvider dataBase)
         {
-            if (dataBase == "MSDataBase")
-            {
-                DataBase = new MSDataProvider();
-                selectedDB = 0;
-            }
-            else
-            {
-                DataBase = new XMLDataProvider();
-                selectedDB = 1;
-            }
-
+            DataBase = dataBase;
+        }
+        public IActionResult ChangeDataBase(int newSelectedDB)
+        {
+            DataBaseStatus.ChoosedDataBase = newSelectedDB;
             return RedirectToAction("TasksList");
         }
         public IActionResult TasksList()
@@ -33,17 +25,17 @@ namespace ToDoList.Controllers
             var taskList = DataBase.GetTasksList();
             var viewModel = new TasksListViewModel
             {
-                CompletedTasks = taskList.Where(item => item.IsCompleted).ToList(),
-                NotCompletedTasks = taskList.Where(item => !item.IsCompleted).ToList(),
-                Categories = DataBase.GetCategoryList(),
-                SelectedDB = selectedDB
+                CompletedTasks = Enumerable.Reverse(
+                        taskList.Where(item => item.IsCompleted).ToList()
+                        .OrderBy(task => task.FinishDate).ToList())
+                    .ToList(),
+
+                NotCompletedTasks = taskList.Where(item => !item.IsCompleted).ToList()
+                    .OrderBy(task => task.DeadLine).ToList(),
+
+                Categories = DataBase.GetCategoryList()
             };
             return View(viewModel);
-        }
-        public IActionResult CreateTask()
-        {
-            var categoryList = DataBase.GetCategoryList();
-            return View(categoryList);
         }
 
         [HttpPost]
@@ -79,9 +71,11 @@ namespace ToDoList.Controllers
             DataBase.UpdateTask(task);
             return RedirectToAction("TasksList");
         }
-        public IActionResult CreateCategory()
+
+        public IActionResult CategoriesList()
         {
-            return View();
+            var categories = DataBase.GetCategoryList();
+            return View(categories);
         }
 
         [HttpPost]
@@ -89,11 +83,6 @@ namespace ToDoList.Controllers
         {
             DataBase.AddCategory(newCategory);
             return View("SuccessfulCreate");
-        }
-        public IActionResult CategoriesList()
-        {
-            var categories = DataBase.GetCategoryList();
-            return View(categories);
         }
         public IActionResult DeleteCategory(int id)
         {

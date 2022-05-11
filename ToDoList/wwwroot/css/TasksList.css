@@ -138,22 +138,6 @@ a {
     box-shadow: gray 0px 0px 5px;
 }
 
-.add-button a {
-    position: fixed;
-    right: 20px;
-    bottom: 20px;
-    width: 65px;
-    height: 65px;
-    background: url("../img/add-button.svg");
-    background-repeat: no-repeat;
-    background-size: contain;
-    transition: 500ms;
-}
-
-.add-button a:hover {
-    transform: rotate(180deg);
-}
-
 .buttons form {
     display: inline;
 }
@@ -181,4 +165,102 @@ a {
     border: none;
     font-size: 20px;
     outline: none;
+}
+
+.red-text {
+    font-family: sans-serif;
+    position: relative;
+    margin: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: inline-block;
+    font-weight: bold;
+    font-size: 15px;
+    color: red;
+}
+
+/* Add new Task */
+
+.add-new-task-box {
+    margin-top: 30px;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    border: 5px solid black;
+    width: 400px;
+    height: 250px;
+    padding: 15px;
+}
+
+.add-new-task-box > .item {
+    display: inline-block;
+    margin: 10px;
+    font-size: 20px;
+    font-weight: bold;
+    font-family: sans-serif;
+}
+
+.add-new-task-box > .item input {
+    border: none;
+    border-bottom: 3px solid black;
+    font-size: 20px;
+}
+
+.add-new-task-box > .item:last-child input {
+    text-align: center;
+}
+
+.add-new-task-box > .item input:active,
+.add-new-task-box > .item input:focus
+{
+    border: none;
+    border-bottom: 3px solid black;
+    outline: none;
+}
+
+.add-new-task-box > .buttons {
+    text-align: center;
+    margin: 10px;
+}
+
+.add-new-task-box > .buttons button {
+    border: 3px solid black;
+    background-color: white;
+    width: 100px;
+    height: 35px;
+    font-size: 18px;
+    margin: 5px;
+}
+
+.add-new-task-box > .buttons button:active {
+    box-shadow: gray 3px 3px 5px;
+}
+
+.category-select,
+.category-select:focus,
+.category-select:active {
+    border: none;
+    border-bottom: 3px solid black;
+    font-size: 20px;
+    outline: none;
+}
+
+.add-new-task-box > .add-button a {
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+    width: 65px;
+    height: 65px;
+    background: url("../img/add-button.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    transition: 500ms;
+}
+
+.add-new-task-box > .add-button a:hover {
+    transform: rotate(180deg);
+}
+
+.missed {
+    background-color: rgba(255,0,0,0.4);
 }

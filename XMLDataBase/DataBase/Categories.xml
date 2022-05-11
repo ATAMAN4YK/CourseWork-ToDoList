@@ -1,7 +1,11 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <categories>
   <category id="0">
-    <Name>Home Work</Name>
-    <Description>None</Description>
+    <Name>Courses</Name>
+    <Description>Null</Description>
+  </category>
+  <category id="1">
+    <Name>Daily</Name>
+    <Description>Null</Description>
   </category>
 </categories>
