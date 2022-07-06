@@ -8,13 +8,39 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Compile Remove="GraphQL - Copy\**" />
+    <Compile Remove="Graph\**" />
+    <Content Remove="GraphQL - Copy\**" />
+    <Content Remove="Graph\**" />
+    <EmbeddedResource Remove="GraphQL - Copy\**" />
+    <EmbeddedResource Remove="Graph\**" />
+    <None Remove="GraphQL - Copy\**" />
+    <None Remove="Graph\**" />
+  </ItemGroup>
+
+  <ItemGroup>
     <Folder Include="Views\Shared\" />
     <Folder Include="wwwroot\js\" />
   </ItemGroup>
 
   <ItemGroup>
+    <PackageReference Include="AutoMapper" Version="11.0.1" />
+    <PackageReference Include="AutoMapper.Extensions.Microsoft.DependencyInjection" Version="11.0.0" />
     <PackageReference Include="Dapper" Version="2.0.123" />
+    <PackageReference Include="graphiql" Version="2.0.0" />
+    <PackageReference Include="GraphQL" Version="5.3.0" />
+    <PackageReference Include="GraphQL.MicrosoftDI" Version="5.3.0" />
+    <PackageReference Include="GraphQL.NewtonsoftJson" Version="5.3.0" />
+    <PackageReference Include="GraphQL.Server.Core" Version="5.2.1" />
+    <PackageReference Include="GraphQL.Server.Transports.AspNetCore" Version="6.1.0" />
+    <PackageReference Include="GraphQL.Server.Ui.Altair" Version="6.1.0" />
+    <PackageReference Include="GraphQL.Server.Ui.Playground" Version="6.1.0" />
+    <PackageReference Include="GraphQL.SystemTextJson" Version="5.3.0" />
+    <PackageReference Include="Microsoft.AspNet.WebApi.Cors" Version="5.2.9" />
+    <PackageReference Include="Microsoft.AspNetCore.Cors" Version="2.2.0" />
+    <PackageReference Include="Microsoft.AspNetCore.Mvc.Cors" Version="2.2.0" />
     <PackageReference Include="System.Data.SqlClient" Version="4.8.3" />
+    <PackageReference Include="System.Text.Json" Version="6.0.4" />
   </ItemGroup>
 
   <ItemGroup>

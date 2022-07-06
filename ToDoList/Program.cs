@@ -3,11 +3,27 @@ using MSSQLDataBase;
 using XMLDataBase;
 using ToDoList.DataBaseProvider;
 using ToDoList.enums;
+using ToDoList;
+
+using ToDoList.GraphQL;
+using GraphQL.SystemTextJson;
+using GraphQL;
+using GraphiQl;
+using GraphQL.Server;
+using GraphQL.Server.Ui.Altair;
+using ToDoList.Extensions;
+using Microsoft.AspNetCore.Server.Kestrel.Core;
 
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Services.AddControllersWithViews();
+
+builder.Services.AddGraphQLApi();
+builder.Services.AddAutoMapper(typeof(MapperProfile));
+
+builder.Services.Configure<IISServerOptions>(options => options.AllowSynchronousIO = true);
+builder.Services.Configure<KestrelServerOptions>(options => options.AllowSynchronousIO = true);
 
 builder.Services.AddTransient<IDataProvider>(provider =>
 {
@@ -24,6 +40,14 @@ builder.Services.AddTransient<IDataProvider>(provider =>
     }
 });
 
+builder.Services.AddCors(opt =>
+{
+    opt.AddDefaultPolicy(builder => 
+        builder.AllowAnyOrigin()
+            .AllowAnyHeader()
+            .AllowAnyMethod());
+});
+
 
 var app = builder.Build();
 
@@ -35,9 +59,16 @@ if (!app.Environment.IsDevelopment())
     app.UseHsts();
 }
 
-
 app.UseHttpsRedirection();
 app.UseStaticFiles();
+
+app.UseCors(options =>
+{
+    options.AllowAnyHeader();
+    options.AllowAnyMethod();
+    options.AllowAnyOrigin();
+});
+
 
 app.UseRouting();
 
@@ -46,5 +77,9 @@ app.UseAuthorization();
 app.MapControllerRoute(
     name: "default",
     pattern: "{controller=Home}/{action=TasksList}/{id?}");
+
+app.UseGraphQLPlayground();
+app.UseGraphQL<ToDoListSchema>();
+app.UseGraphQLAltair();
 
 app.Run();

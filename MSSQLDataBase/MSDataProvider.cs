@@ -17,31 +17,36 @@ namespace MSSQLDataBase
 
                 conn.Execute(
                     "INSERT INTO Categories (Name, Description) " +
-                    "VALUES (@Name, @Description)",
+                    $"VALUES (@Name, @Description)",
                     new NewCategory
                     {
-                        Name = category.Name,
-                        Description = category.Description,
+                        Name = category.Name.ToString(),
+                        Description = category.Description?.ToString(),
                     });
             }
         }
 
         void IDataProvider.AddTask(NewTask task)
         {
-            using (SqlConnection conn = new SqlConnection(SqlConnectionString))
-            {
+
+            SqlConnection conn = new SqlConnection(SqlConnectionString);
+            try {
                 conn.Open();
 
                 conn.Execute(
                     "INSERT INTO TASKS (TaskName, TaskText, Deadline, Category) " +
                     "VALUES (@TaskName, @TaskText, @DeadLine, @Category)",
                     new NewTask
-                    { 
-                        TaskName = task.TaskName, 
-                        TaskText = task.TaskText, 
-                        DeadLine = task.DeadLine, 
-                        Category = task.Category 
+                    {
+                        TaskName = task.TaskName,
+                        TaskText = task.TaskText,
+                        DeadLine = task.DeadLine,
+                        Category = task.Category
                     });
+            }
+            finally
+            {
+                conn.Dispose();
             }
         }
 

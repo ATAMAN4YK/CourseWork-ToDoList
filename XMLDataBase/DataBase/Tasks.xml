@@ -37,7 +37,7 @@
     <TaskText>TestTask</TaskText>
     <DeadLine>Null</DeadLine>
     <Category id="Null" />
-    <isCompleted>False</isCompleted>
-    <FinishDate>Null</FinishDate>
+    <isCompleted>True</isCompleted>
+    <FinishDate>2022-05-13T12:05:39.0009098+03:00</FinishDate>
   </task>
 </tasks>
