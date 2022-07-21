@@ -1,0 +1,76 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="ToDoList.Controllers.HomeController">
+    <Position X="4.5" Y="1.25" Width="2" />
+    <TypeIdentifier>
+      <HashCode>IAAAAAgAAAJCAAAABAAAEAAIAhAAAQBCAQAAAAAAAAA=</HashCode>
+      <FileName>Controllers\HomeController.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ToDoList.DataBaseProvider.DataBaseStatus">
+    <Position X="6.75" Y="1.25" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>DataBaseProvider\DataBaseStatus.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ToDoList.Extensions.GraphQLServices">
+    <Position X="8.75" Y="2.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAE=</HashCode>
+      <FileName>Extensions\GraphQLServices.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ToDoList.ViewModels.EditTaskViewModel">
+    <Position X="6.75" Y="2.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAEAAAAEAAAAAAAAA=</HashCode>
+      <FileName>ViewModels\EditTaskViewModel.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ToDoList.ViewModels.TasksListViewModel">
+    <Position X="6.75" Y="4.25" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAEIAAAAAAAAAABAA=</HashCode>
+      <FileName>ViewModels\TasksListViewModel.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ToDoListData.Models.Category">
+    <Position X="11.25" Y="1.25" Width="1.5" />
+    <TypeIdentifier />
+  </Class>
+  <Class Name="ToDoListData.Models.NewCategory">
+    <Position X="13" Y="1.25" Width="1.5" />
+    <TypeIdentifier />
+  </Class>
+  <Class Name="ToDoListData.Models.NewTask">
+    <Position X="11.25" Y="3.25" Width="1.5" />
+    <TypeIdentifier />
+  </Class>
+  <Class Name="ToDoListData.Models.Task">
+    <Position X="13" Y="3.25" Width="1.5" />
+    <TypeIdentifier />
+  </Class>
+  <Class Name="MSSQLDataBase.MSDataProvider" Collapsed="true">
+    <Position X="8.75" Y="7.25" Width="1.5" />
+    <TypeIdentifier />
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="XMLDataBase.XMLDataProvider" Collapsed="true">
+    <Position X="11" Y="7.25" Width="1.5" />
+    <TypeIdentifier />
+    <Lollipop Position="0.2" />
+  </Class>
+  <Interface Name="ToDoListData.Providers.IDataProvider">
+    <Position X="15" Y="2.25" Width="1.5" />
+    <TypeIdentifier />
+  </Interface>
+  <Enum Name="ToDoList.enums.DataBaseList">
+    <Position X="8.75" Y="1.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>enums\DataBaseList.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

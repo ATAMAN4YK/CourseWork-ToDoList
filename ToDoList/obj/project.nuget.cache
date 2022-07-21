@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "h9W6RjKA1+VhpjmocXc8gHpqEdf+FQCsVwXtglutqU3XDLCqaeYBUjg1mdz/3VyVOOgknGBlWfkif8D7j8MXEg==",
+  "dgSpecHash": "2cgjo9BVI8sl0ikEIvZ/GIZL9qoPRMaYaPBKcn6CgTGnK8GAq25LEvmVXPNDmV7VfatvTfGer8d09v6TfIVsoQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Admin\\Desktop\\Learning\\SEC\\ToDoList\\ToDoList\\ToDoList.csproj",
+  "projectFilePath": "C:\\Users\\Admin\\Desktop\\Learning\\Політехніка Атаманчук Денис\\First Course\\Course Work\\ToDoList\\ToDoList\\ToDoList.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Admin\\.nuget\\packages\\automapper\\11.0.1\\automapper.11.0.1.nupkg.sha512",
     "C:\\Users\\Admin\\.nuget\\packages\\automapper.extensions.microsoft.dependencyinjection\\11.0.0\\automapper.extensions.microsoft.dependencyinjection.11.0.0.nupkg.sha512",

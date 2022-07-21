@@ -8,33 +8,33 @@ build_property.PlatformNeutralAssembly =
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = ToDoList
 build_property.RootNamespace = ToDoList
-build_property.ProjectDir = C:\Users\Admin\Desktop\Learning\SEC\ToDoList\ToDoList\
+build_property.ProjectDir = C:\Users\Admin\Desktop\Learning\Політехніка Атаманчук Денис\First Course\Course Work\ToDoList\ToDoList\
 build_property.RazorLangVersion = 6.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = C:\Users\Admin\Desktop\Learning\SEC\ToDoList\ToDoList
+build_property.MSBuildProjectDirectory = C:\Users\Admin\Desktop\Learning\Політехніка Атаманчук Денис\First Course\Course Work\ToDoList\ToDoList
 build_property._RazorSourceGeneratorDebug = 
 
-[C:/Users/Admin/Desktop/Learning/SEC/ToDoList/ToDoList/Views/Home/CategoriesList.cshtml]
+[C:/Users/Admin/Desktop/Learning/Політехніка Атаманчук Денис/First Course/Course Work/ToDoList/ToDoList/Views/Home/CategoriesList.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxDYXRlZ29yaWVzTGlzdC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Admin/Desktop/Learning/SEC/ToDoList/ToDoList/Views/Home/EditCategory.cshtml]
+[C:/Users/Admin/Desktop/Learning/Політехніка Атаманчук Денис/First Course/Course Work/ToDoList/ToDoList/Views/Home/EditCategory.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxFZGl0Q2F0ZWdvcnkuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Admin/Desktop/Learning/SEC/ToDoList/ToDoList/Views/Home/EditTask.cshtml]
+[C:/Users/Admin/Desktop/Learning/Політехніка Атаманчук Денис/First Course/Course Work/ToDoList/ToDoList/Views/Home/EditTask.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxFZGl0VGFzay5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Admin/Desktop/Learning/SEC/ToDoList/ToDoList/Views/Home/SuccessfulCreate.cshtml]
+[C:/Users/Admin/Desktop/Learning/Політехніка Атаманчук Денис/First Course/Course Work/ToDoList/ToDoList/Views/Home/SuccessfulCreate.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxTdWNjZXNzZnVsQ3JlYXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Admin/Desktop/Learning/SEC/ToDoList/ToDoList/Views/Home/TasksList.cshtml]
+[C:/Users/Admin/Desktop/Learning/Політехніка Атаманчук Денис/First Course/Course Work/ToDoList/ToDoList/Views/Home/TasksList.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxUYXNrc0xpc3QuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Admin/Desktop/Learning/SEC/ToDoList/ToDoList/Views/_ViewImports.cshtml]
+[C:/Users/Admin/Desktop/Learning/Політехніка Атаманчук Денис/First Course/Course Work/ToDoList/ToDoList/Views/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
