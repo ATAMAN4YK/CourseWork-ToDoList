@@ -69,11 +69,14 @@ namespace XMLDataBase
             DefineMaxCategoryId();
             if (categoriesNode != null)
             {
-                categoriesNode.Add(
+                if (category.Name.Length <= 19)
+                {
+                    categoriesNode.Add(
                     new XElement("category", new XAttribute("id", ++maxCategoryId),
                         new XElement("Name", category.Name),
                         new XElement("Description", category.Description == null ? "Null" : category.Description)
                     ));
+                }
             }
             xCategoriesDocument.Save(@"../XMLDataBase/DataBase/Categories.xml");
         }
@@ -85,8 +88,9 @@ namespace XMLDataBase
             DefineMaxTaskId();
             if (tasksNode != null)
             {
-                
-                tasksNode.Add(
+                if (task.TaskName.Length <= 29)
+                {
+                    tasksNode.Add(
                     new XElement("task", new XAttribute("id", ++maxTaskId),
                         new XElement("TaskName", task.TaskName),
                         new XElement("TaskText", task.TaskText),
@@ -95,6 +99,7 @@ namespace XMLDataBase
                         new XElement("isCompleted", "False"),
                         new XElement("FinishDate", "Null")
                     ));
+                }
             }
             xTasksDocument.Save(@"../XMLDataBase/DataBase/Tasks.xml");
         }

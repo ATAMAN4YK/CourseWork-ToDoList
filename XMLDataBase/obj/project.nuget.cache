@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "aFOGRSls4wmZ2OLfdnUByfH05XSBg2MnE1JXdcrlES6LtcCdNfO4UAJj36rGYqknDMfXrrETc4xwh5mVkrj1Jg==",
+  "dgSpecHash": "Km8SXYWkY5QMITTc7jDkg4f877sfdPSkHdzLBNkrcOF2IlSRi2kMI+YwONs962mlq4+nN0FXXUbk2KTvAvbQ9w==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Admin\\Desktop\\Learning\\SEC\\ToDoList\\XMLDataBase\\XMLDataBase.csproj",
+  "projectFilePath": "C:\\Users\\Admin\\Desktop\\Learning\\Політехніка Атаманчук Денис\\First Course\\Course Work\\ToDoList\\XMLDataBase\\XMLDataBase.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Admin\\.nuget\\packages\\dapper\\2.0.123\\dapper.2.0.123.nupkg.sha512",
     "C:\\Users\\Admin\\.nuget\\packages\\microsoft.netcore.platforms\\3.1.0\\microsoft.netcore.platforms.3.1.0.nupkg.sha512",

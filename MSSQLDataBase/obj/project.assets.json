@@ -5399,11 +5399,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Admin\\Desktop\\Learning\\SEC\\ToDoList\\MSSQLDataBase\\MSSQLDataBase.csproj",
+      "projectUniqueName": "C:\\Users\\Admin\\Desktop\\Learning\\Політехніка Атаманчук Денис\\First Course\\Course Work\\ToDoList\\MSSQLDataBase\\MSSQLDataBase.csproj",
       "projectName": "MSSQLDataBase",
-      "projectPath": "C:\\Users\\Admin\\Desktop\\Learning\\SEC\\ToDoList\\MSSQLDataBase\\MSSQLDataBase.csproj",
+      "projectPath": "C:\\Users\\Admin\\Desktop\\Learning\\Політехніка Атаманчук Денис\\First Course\\Course Work\\ToDoList\\MSSQLDataBase\\MSSQLDataBase.csproj",
       "packagesPath": "C:\\Users\\Admin\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Admin\\Desktop\\Learning\\SEC\\ToDoList\\MSSQLDataBase\\obj\\",
+      "outputPath": "C:\\Users\\Admin\\Desktop\\Learning\\Політехніка Атаманчук Денис\\First Course\\Course Work\\ToDoList\\MSSQLDataBase\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
@@ -5425,8 +5425,8 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "projectReferences": {
-            "C:\\Users\\Admin\\Desktop\\Learning\\SEC\\ToDoList\\ToDoListData\\ToDoListData.csproj": {
-              "projectPath": "C:\\Users\\Admin\\Desktop\\Learning\\SEC\\ToDoList\\ToDoListData\\ToDoListData.csproj"
+            "C:\\Users\\Admin\\Desktop\\Learning\\Політехніка Атаманчук Денис\\First Course\\Course Work\\ToDoList\\ToDoListData\\ToDoListData.csproj": {
+              "projectPath": "C:\\Users\\Admin\\Desktop\\Learning\\Політехніка Атаманчук Денис\\First Course\\Course Work\\ToDoList\\ToDoListData\\ToDoListData.csproj"
             }
           }
         }
@@ -5469,7 +5469,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.200\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.302\\RuntimeIdentifierGraph.json"
       }
     }
   }

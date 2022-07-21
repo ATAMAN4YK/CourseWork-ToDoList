@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "X1xDM7SlOstUKCDeTBrk1JN72e44KBsiS1yR+gySdBUOV4zBtT7bIUEwVWby0hn70IJM5u0EGrpG+PKTDjGFLw==",
+  "dgSpecHash": "O8yx5F3GER+1pIpn+ghqHCuZUS0xp1uy/yi5jAUGAuiKcE4UvjJHHlbR9JpxcKr6biyCRRggBXC+ICjgQfDzKA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Admin\\Desktop\\Learning\\SEC\\ToDoList\\ToDoListData\\ToDoListData.csproj",
+  "projectFilePath": "C:\\Users\\Admin\\Desktop\\Learning\\Політехніка Атаманчук Денис\\First Course\\Course Work\\ToDoList\\ToDoListData\\ToDoListData.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Admin\\.nuget\\packages\\dapper\\2.0.123\\dapper.2.0.123.nupkg.sha512",
     "C:\\Users\\Admin\\.nuget\\packages\\microsoft.netcore.platforms\\3.1.0\\microsoft.netcore.platforms.3.1.0.nupkg.sha512",

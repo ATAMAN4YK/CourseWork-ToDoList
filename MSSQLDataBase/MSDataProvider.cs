@@ -15,7 +15,9 @@ namespace MSSQLDataBase
             {
                 conn.Open();
 
-                conn.Execute(
+                if (category.Name.Length <= 19)
+                {
+                    conn.Execute(
                     "INSERT INTO Categories (Name, Description) " +
                     $"VALUES (@Name, @Description)",
                     new NewCategory
@@ -23,6 +25,7 @@ namespace MSSQLDataBase
                         Name = category.Name.ToString(),
                         Description = category.Description?.ToString(),
                     });
+                }
             }
         }
 
@@ -33,16 +36,19 @@ namespace MSSQLDataBase
             try {
                 conn.Open();
 
-                conn.Execute(
-                    "INSERT INTO TASKS (TaskName, TaskText, Deadline, Category) " +
-                    "VALUES (@TaskName, @TaskText, @DeadLine, @Category)",
-                    new NewTask
-                    {
-                        TaskName = task.TaskName,
-                        TaskText = task.TaskText,
-                        DeadLine = task.DeadLine,
-                        Category = task.Category
-                    });
+                if (task.TaskName.Length <= 29)
+                {
+                    conn.Execute(
+                        "INSERT INTO TASKS (TaskName, TaskText, Deadline, Category) " +
+                        "VALUES (@TaskName, @TaskText, @DeadLine, @Category)",
+                        new NewTask
+                        {
+                            TaskName = task.TaskName,
+                            TaskText = task.TaskText,
+                            DeadLine = task.DeadLine,
+                            Category = task.Category
+                        });
+                }
             }
             finally
             {
